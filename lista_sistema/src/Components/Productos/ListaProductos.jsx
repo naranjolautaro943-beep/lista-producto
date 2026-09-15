@@ -1,15 +1,16 @@
-import React from 'react'
 import { useState } from 'react'
-import { ProductosIniciales } from './ProductosIniciales'
 import ItemProducto from './ItemProducto'
-export default function ListaProductos() {
-    const [productos] = useState(ProductosIniciales)
-    const [categoriaFiltro, setCategoriaFiltro] = useState("Todas")
-    const [orden, setOrden] = useState("stockAsc")
-    const categorias = ["Todas", ...new Set(productos.map(p => p.categoria))]
-    const productosVisibles = productos
+
+export default function ListaProductos({ productos }) {
+  const [categoriaFiltro, setCategoriaFiltro] = useState("Todas")
+  const [orden, setOrden] = useState("stockAsc")
+
+  const categorias = ["Todas", ...new Set(productos.map(p => p.categoria))]
+
+  const productosVisibles = productos
     .filter(p => categoriaFiltro === "Todas" || p.categoria === categoriaFiltro)
     .sort((a, b) => orden === "stockAsc" ? a.stock - b.stock : b.stock - a.stock)
+
   return (
     <div>
       <div className="controles">
@@ -20,11 +21,16 @@ export default function ListaProductos() {
           Ordenar por stock ({orden === "stockAsc" ? "menor a mayor" : "mayor a menor"})
         </button>
       </div>
-      <ul>
-        {productosVisibles.map(p => (
-          <ItemProducto key={p.codigoBarras} producto={p} />
-        ))}
-      </ul>
+
+      {productosVisibles.length === 0 ? (
+        <p>No se encontraron productos que coincidan con el filtro.</p>
+      ) : (
+        <ul>
+          {productosVisibles.map(p => (
+            <ItemProducto key={p.codigoBarras} producto={p} />
+          ))}
+        </ul>
+      )}
     </div>
   )
 }
