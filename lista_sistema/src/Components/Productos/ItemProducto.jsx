@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function ItemProducto({producto}) {
+function ItemProducto({producto}) {
   return (
-    <div>
+    
       <li>
       <span>{producto.nombre}</span>
       <span>{producto.categoria}</span>
@@ -10,10 +10,12 @@ export default function ItemProducto({producto}) {
       <span className={producto.stock === 0 ? "stock sin-stock" : "stock"}>
         {producto.stock === 0 ? "sin stock" : `Stock: ${producto.stock}`}
       </span>
+      <span>Proveedor: {producto.proveedor ?? "Sin proveedor asignado"}</span>
       </li>
-    </div>
   )
 }
+
+export default ItemProducto;
 
 
 
