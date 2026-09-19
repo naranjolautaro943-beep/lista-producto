@@ -1,4 +1,5 @@
 import ListaProductos from './ListaProductos'
+import './Catalogo.css'
 
 export default function Catalogo_Productos({ estadoPantalla, setEstadoPantalla, productosBase }) {
     return (

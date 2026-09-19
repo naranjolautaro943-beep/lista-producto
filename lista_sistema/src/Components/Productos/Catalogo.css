@@ -1,0 +1,99 @@
+.catalogo-productos {
+    background-color: white;
+    border: 1px solid #dfe3e8;
+    border-radius: 7px;
+    padding: 16px;
+    margin-top: 24px;
+}
+
+/* Botones de simulación */
+.controles-simulacion {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.controles-simulacion button {
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid #d9dee5;
+    border-radius: 4px;
+    background: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.controles-simulacion button:hover {
+    background-color: #f4f5f7;
+}
+
+/* Filtro y orden */
+.controles {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.controles select,
+.controles button {
+    height: 34px;
+    font-size: 13px;
+}
+
+.controles button {
+    padding: 0 12px;
+    border: 1px solid #d9dee5;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+}
+
+/* Lista de productos */
+.catalogo-productos ul {
+    list-style: none;
+}
+
+.catalogo-productos li {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.3fr 1.5fr;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 8px;
+    border-bottom: 1px solid #eef0f3;
+    font-size: 13px;
+    color: #394150;
+}
+
+.catalogo-productos li:last-child {
+    border-bottom: none;
+}
+
+.catalogo-productos li:hover {
+    background-color: #fafbfc;
+}
+
+/* Badge de stock */
+.stock {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #e6f4ea;
+    color: #1e7e34;
+    width: fit-content;
+}
+
+.stock.sin-stock {
+    background-color: #fdecea;
+    color: #c0392b;
+}
+
+/* Mensaje de error */
+.mensaje-error {
+    color: #c0392b;
+    background-color: #fdecea;
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+}
