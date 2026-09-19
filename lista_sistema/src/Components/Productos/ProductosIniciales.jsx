@@ -1,4 +1,4 @@
-
+import ProductCard from './ProductCard'
 export const ProductosIniciales = [
   { id: 1, 
     nombre: "Coca Cola 500ml", 
