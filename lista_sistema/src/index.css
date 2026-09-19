@@ -1,0 +1,15 @@
+@import "tailwindcss";
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px 11px;
+  text-align: left;
+}

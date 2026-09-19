@@ -1,4 +1,4 @@
-
+import ProductCard from './ProductCard'
 export const ProductosIniciales = [
   { id: 1, 
     nombre: "Coca Cola 500ml", 
@@ -19,7 +19,15 @@ export const ProductosIniciales = [
     nombre: "Yerba Playadito 1kg", 
     categoria: "Almacén",     precio: 3200, stock: 5,  codigoBarras: "7790006000060", proveedor: "Distribuidora Salta" }
   ]
-
+{ProductosIniciales.map(p => (
+  <ProductCard
+    key={p.id}
+    nombre={p.nombre}
+    precio={p.precio}
+    imagen={p.imagen}
+    stock={p.stock}
+  />
+))}
 
 
 
