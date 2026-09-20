@@ -1,4 +1,30 @@
 
+h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
 
+h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
 
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
 
+input, select {
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid #d9dee5;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #394150;
+    outline: none;
+    box-sizing: border-box;
+}
