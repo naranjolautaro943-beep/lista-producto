@@ -267,22 +267,22 @@ export default function Main({ abierto, estadoPantalla, setEstadoPantalla, produ
 
                 <div className="accesos">
 
-                    <div className="card">
+                    <div className="info-card">
                         <h3>Ventas de hoy</h3>
                         <p className="card-text">Total: $55.348,32</p>
                     </div>
 
-                    <div className="card">
+                    <div className="info-card">
                         <h3>Stock Bajo</h3>
                         <p className="card-text">1</p>
                     </div>
 
-                    <div className="card">
+                    <div className="info-card">
                         <h3>Pedidos</h3>
                         <p className="card-text">2 para hoy 28/08/26</p>
                     </div>
 
-                    <div className="card">
+                    <div className="info-card">
                         <h3>Ventas de Ayer</h3>
                         <p className="card-text">Total: $45.678,90</p>
                     </div>

@@ -12,6 +12,10 @@ export default function Footer() {
                     <li className="nav-item">
                     <a href="#" className="nav-link px-2 text-body-secondary">Emiliano Lopez</a>
                     </li>
+
+                    <li className="nav-item">
+                    <a href="#" className="nav-link px-2 text-body-secondary">Cristian Arias</a>
+                    </li>
                 </ul>
             <p className="text-center text-body-secondary">&copy; 2026 Instituto Superior del Milagro</p>
             </footer>

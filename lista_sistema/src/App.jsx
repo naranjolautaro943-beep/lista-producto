@@ -4,6 +4,7 @@ import Main from './Components/Main/Main'
 import { useState } from 'react'
 import Header from './Components/Header/Header'
 import { ProductosIniciales } from './Components/Productos/ProductosIniciales'
+import './App.css'
 
 function App() {
   const [abierto, setAbierto] = useState(false);  

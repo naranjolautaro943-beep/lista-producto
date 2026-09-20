@@ -12,17 +12,17 @@
     box-sizing: border-box;
 }
 
-.cliente{
-    width: 50%;
-}
-.comprobante{
-    width: 50%;
+.cliente, .comprobante {
+    flex: 1;
 }
 
 .fila {
     display: flex;
     gap: 12px;
     margin-bottom: 13px;
+}
+.fila > div {
+    flex: 1;
 }
 .campo {
     display: flex;
@@ -115,6 +115,22 @@
     margin-left: auto;
 }
 
+.fila button {
+    height: 34px;
+    padding: 0 14px;
+    border: 1px solid #d9dee5;
+    background: white;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.fila button.activo {
+    background-color: #3264ad;
+    color: white;
+    border-color: #3264ad;
+}
+
 .fila-total {
     display: flex;
     justify-content: space-between;
@@ -197,14 +213,6 @@
     margin-top: 16px;
 }
 
-
-
-
-
-
-
-
-
 .card {
     position: relative;
     background-color: #F9F6F0;
@@ -214,7 +222,18 @@
     transition: transform .15s ease, box-shadow .15s ease;
     box-shadow: 4px 4px 0 #1E2A22;
 }
+.info-card {
+    background-color: white;
+    border: 1px solid #dfe3e8;
+    border-radius: 8px;
+    padding: 16px;
+}
 
+.info-card h3 {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
 .card-text {
     position: middle;
     bottom: 10px;
@@ -225,7 +244,7 @@
 }
 .paneles {
     display: flex;
-    gap: 300px;
+    gap: 24px;
 }
 
 .tabla-ventas{
@@ -233,7 +252,7 @@
 }
 .ventanas {
     display: flex;
-    gap: 100px;
+    gap: 24px;
 }
 .main {
     background-color: #F4F5F7;
@@ -253,4 +272,9 @@
 
 .main-wrapper.cerrado {
     margin-left: 0;
+}
+.container {
+    padding: 24px 32px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
